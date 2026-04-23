@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_mlp_tiny
+
+import std::io
+use ltl_mlp_tiny as lib
+
+fn main() {
+    io::println("ltl_mlp_tiny demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
